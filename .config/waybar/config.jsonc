@@ -1,0 +1,114 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 8,
+
+  "modules-left": [
+		"custom/startbutton",
+    "hyprland/workspaces",
+    "clock"
+  ],
+
+  "modules-center": [
+		"wlr/taskbar"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "custom/fake-ppd",
+    "cpu",
+    "memory",
+    "backlight",
+    "battery",
+    "tray"
+  ],
+
+	"custom/startbutton": {
+		"format": "󰣨",
+		"on-click": "rofi -show drun",
+		"tooltip": true, 
+    "tooltip-format": "I am running Gentoo Btw UwU"
+	},
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+      "*": 4
+    }
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip": false
+  },
+
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"icon-size": 24,
+		"spacing": 0,
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"filter-return-status": true,
+		"rewrite": {
+			"Firefox Web Browser": "Firefox",
+			"Foot": "Terminal",
+			"Alacritty": "Terminal",
+			"Kitty": "Terminal"
+		}
+	},
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 40,
+    "separate-outputs": true
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": "󰖁",
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+		"on-click": "kitty --class nmtui_pop -o initial_window_width=800 -o initial_window_height=600 -o remember_window_size=no sh -c \"sudo nmtui\""
+	},
+
+	"custom//fake-ppd": {
+    "format": "{icon}",
+    "tooltip": true,
+    "exec": "~/.local/bin/power",
+    "interval": 0,
+    "icons": {
+      "performance": "",
+      "balanced": "",
+      "powersave": ""
+    }
+	},
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "format": " {percentage}%"
+  },
+
+  "backlight": {
+    "format": "󰃠 {percent}%"
+  },
+
+	"battery": {
+	  "format": "󰁹 {capacity}%",
+	  "format-charging": "󰂄 {capacity}%"
+	},
+  "tray": {
+    "spacing": 10
+  }
+}

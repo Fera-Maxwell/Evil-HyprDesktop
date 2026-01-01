@@ -1,0 +1,62 @@
+.nemo-window {
+    .places-treeview {
+        -NemoPlacesTreeView-disk-full-bg-color: lighten($sidebar_color, 15%);
+        -NemoPlacesTreeView-disk-full-fg-color: $selected_bg_color;
+        -GtkTreeView-vertical-separator: 7; 
+        .view.cell,
+        iconview.cell {
+            color: #F2EFEA;
+            &:hover,
+            &:selected { @include button(hover-header); }
+        }
+    }
+
+    .sidebar {
+        background-color: $sidebar_color; 
+        .view, .iconview, row {
+            background-color: transparent;
+        }
+    }
+
+    .nemo-window-pane {
+        widget.entry {
+            background-clip: padding-box;
+            min-height: 28px;
+            padding: 5px;
+            color: $fg_color;
+            border: 1px solid $selected_bg_color;
+            border-radius: 3px;
+            box-shadow: 0px 0px 1px 1px $selected_bg_color inset;
+            &:selected {
+                background-color: $selected_bg_color;
+                color: $selected_fg_color;
+            }
+        }
+    }
+
+    toolbar.primary-toolbar {
+        margin-bottom: -1px;
+        background: $headerbar_color;
+        button {
+            @include button(normal-header);
+            min-height: 24px;
+            padding: 3px;
+            &:hover,
+            &:selected,
+            &:active,
+            &:checked { 
+                @include button(hover-header); 
+                &:backdrop {
+                    &, & label {
+                        color: $backdrop_selected_bg_color;
+                    }
+                }
+            }
+        }
+    }
+
+    .nemo-inactive-pane .view:not(:selected),
+    .nemo-inactive-pane iconview {
+        background-color: $bg_color; 
+    }
+}

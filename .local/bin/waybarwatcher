@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+DIR="$HOME/.config/waybar"
+
+restart_waybar() {
+  echo "→ Restarting waybar"
+  pkill waybar 2>/dev/null
+  sleep 0.5
+  waybar &
+}
+
+restart_waybar
+
+inotifywait -m \
+  -e close_write,move,create \
+  --format '%f' \
+  "$DIR" |
+while read -r file; do
+  echo "→ Change detected: $file"
+  case "$file" in
+    config.jsonc|style.css)
+      restart_waybar
+      ;;
+  esac
+done
