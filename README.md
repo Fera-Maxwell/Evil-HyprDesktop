@@ -1,5 +1,11 @@
 # EVIL HYPRDESKTOP Repo
 ---
+
+# $\color{red}{\text{THE BLOOD MOON IS RISING}}$
+## $\color{darkred}{\text{THIS SCRIPT ALSO WIPES YOUR "gtk-4.0 gtk-3.0" IN CONFIG}}$
+
+---
+
 ## Working distros
 ```
 Arch (Of course)
@@ -65,6 +71,6 @@ git clone https://github.com/Fera-Maxwell/Evil-HyprDesktop.git
 # 2. CD into it
 cd Evil-HyprDesktop
 
-# 3. Run the INSTALL script
+# 3. Run the INSTALL script (If you get a "Permission denied" that means THE BLOOD MOON DOESN'T FIND YOU WORTHY... Or it's because it is not Executable, Run "chmod +x install.sh" to fix it)
 ./install.sh
 ```
