@@ -53,6 +53,25 @@ if [ -d "$HOME/.config/gtk-4.0" ]; then
     cd "$REPO_DIR"
 fi
 
+typewrite "$BLUE" 0.03 "Installing the FONT"
+mkdir -p $HOME/.local/share/fonts/
+cp $REPO_DIR/Monocraft.ttc $HOME/.local/share/fonts/
+
+typewrite "$WHITE" 0.05 "We have a .bashrc if you want to 100% get the config, do you confirm? (y/n)"
+typewrite "$WHITE" 0.05 "Don't worry, we will RENAME your old bashrc into '.bashrc.bak'"
+typewrite "$RED" 0.1 "(Y/N)"
+
+# Wait for input
+read -p "> " confirm
+
+if [[ "$confirm" =~ ^[Yy]$ ]]; then
+    typewrite "$BLUE" 0.03 "Backing up and deploying new .bashrc..."
+    [ -f "$HOME/.bashrc" ] && mv "$HOME/.bashrc" "$HOME/.bashrc.bak"
+    cp "$REPO_DIR/.bashrc" "$HOME/.bashrc"
+else
+    typewrite "$RED" 0.03 "Skipping .bashrc deployment. Keeping your soul intact..."
+fi
+
 echo -e "\n${GREEN}Deployment Complete!${RESET}"
 
 sleep 2
