@@ -6,6 +6,22 @@
 
 ---
 
+## 📸 Screenshots
+<details>
+  <summary><b>Click to expand the darkness...</b></summary>
+  
+  ### The Main View
+  <img src="https://raw.githubusercontent.com/Fera-Maxwell/Evil-HyprDesktop/main/screenshots/desktop.png" alt="Desktop View">
+
+  ### Terminal & Neofetch
+  <img src="https://raw.githubusercontent.com/Fera-Maxwell/Evil-HyprDesktop/main/screenshots/terminal.png" alt="Terminal View">
+
+  ### The Evil Lockscreen
+  <img src="https://raw.githubusercontent.com/Fera-Maxwell/Evil-HyprDesktop/main/screenshots/lockscreen.png" alt="Lockscreen View">
+</details>
+
+---
+
 ## Working distros
 ```
 Arch (Of course)
