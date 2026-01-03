@@ -18,6 +18,9 @@
 
   ### EXE ROFI
   <img src="https://github.com/Fera-Maxwell/Evil-HyprDesktop/blob/main/screenshots/2026-01-03_14-22-00.png?raw=true" alt="Rofi View">
+
+  ### Lockscreen
+  <img src="https://github.com/Fera-Maxwell/Evil-HyprDesktop/blob/main/screenshots/lockscreen.png?raw=true" alt="Lockscreen View">
 </details>
 
 ---
@@ -44,11 +47,11 @@ PuppyLinux (Might be a puppy but not good)
 
 ### ARCH
 ```bash
-sudo pacman -Syu kitty hyprland pcmanfm-qt thunar waybar dunst btop nvim pipewire wireplumber qt5-wayland qt6-wayland polkit-gnome rofi hyprlock
+sudo pacman -Syu kitty hyprland hyprlock pcmanfm-qt thunar waybar dunst btop nvim pipewire wireplumber qt5-wayland qt6-wayland polkit-gnome rofi xdg-desktop-portal-hyprland gvfs
 ```
 ### DEB BASED
 ```bash
-sudo apt update && sudo apt install hyprland waybar kitty dunst btop nvim pcmanfm-qt thunar pipewire-bin gstreamer1.0-plugins-good libpulse0 qt5-style-plugins qt6-gtk-platformtheme rofi hyprlock
+sudo apt update && sudo apt install hyprland hyprlock waybar kitty dunst btop nvim pcmanfm-qt thunar pipewire-bin gstreamer1.0-plugins-good libpulse0 qt5-style-plugins qt6-gtk-platformtheme rofi gvfs
 ```
 ### NIX
 ```conf
@@ -64,6 +67,8 @@ environment.systemPackages = with pkgs; [
   neovim
   pcmanfm-qt
   xfce.thunar
+  xfce.thunar-volman
+  gvfs
   pipewire
   wireplumber
   nwg-look
@@ -72,13 +77,13 @@ environment.systemPackages = with pkgs; [
 ```
 ### FEDORA
 ```bash
-sudo dnf install hyprland waybar kitty dunst btop neovim pcmanfm-qt thunar pipewire-utils rofi hyprlock
+sudo dnf install hyprland hyprlock waybar kitty dunst btop neovim pcmanfm-qt thunar pipewire-utils rofi gvfs
 ```
 ### GENTOO
 ```bash
-# add USE "wayland" into your MAKE.CONF
+# Ensure you have USE="wayland" in your /etc/portage/make.conf
 
-sudo emerge -aqv gui-wm/hyprland gui-wm/hyprlock gui-apps/waybar x11-terms/kitty gui-apps/dunst sys-process/btop app-editors/neovim x11-misc/pcmanfm-qt x11-fm/thunar media-video/pipewire gui-libs/display-manager-init x11-misc/rofi
+sudo emerge -aqv gui-wm/hyprland gui-apps/hyprlock gui-apps/waybar x11-terms/kitty gui-apps/dunst sys-process/btop app-editors/neovim x11-misc/pcmanfm-qt xfce-base/thunar gnome-base/gvfs media-video/pipewire x11-misc/rofi
 ```
 
 ## Instalation
