@@ -28,38 +28,40 @@ PuppyLinux (Might be a puppy but not good)
 
 ### ARCH
 ```bash
-sudo pacman -Syu kitty hyprland pcmanfm-qt thunar waybar dunst btop nvim pipewire wireplumber qt5-wayland qt6-wayland polkit-gnome
+sudo pacman -Syu kitty hyprland pcmanfm-qt thunar waybar dunst btop nvim pipewire wireplumber qt5-wayland qt6-wayland polkit-gnome rofi
 ```
 ### DEB BASED
 ```bash
-sudo apt update && sudo apt install hyprland waybar kitty dunst btop nvim pcmanfm-qt thunar pipewire-bin gstreamer1.0-plugins-good libpulse0 qt5-style-plugins qt6-gtk-platformtheme
+sudo apt update && sudo apt install hyprland waybar kitty dunst btop nvim pcmanfm-qt thunar pipewire-bin gstreamer1.0-plugins-good libpulse0 qt5-style-plugins qt6-gtk-platformtheme rofi
 ```
 ### NIX
 ```conf
 programs.hyprland.enable = true;
 environment.systemPackages = with pkgs; [
+  hyprland
   waybar
   kitty
   dunst
+  rofi
   btop
   neovim
   pcmanfm-qt
   xfce.thunar
   pipewire
   wireplumber
-  nwg-look 
+  nwg-look
   glib
 ];
 ```
 ### FEDORA
 ```bash
-sudo dnf install hyprland waybar kitty dunst btop neovim pcmanfm-qt thunar pipewire-utils
+sudo dnf install hyprland waybar kitty dunst btop neovim pcmanfm-qt thunar pipewire-utils rofi
 ```
 ### GENTOO
 ```bash
 # add USE "wayland" into your MAKE.CONF
 
-sudo emerge -aqv gui-wm/hyprland gui-apps/waybar x11-terms/kitty gui-apps/dunst sys-process/btop app-editors/neovim x11-misc/pcmanfm-qt x11-fm/thunar media-video/pipewire gui-libs/display-manager-init
+sudo emerge -aqv gui-wm/hyprland gui-apps/waybar x11-terms/kitty gui-apps/dunst sys-process/btop app-editors/neovim x11-misc/pcmanfm-qt x11-fm/thunar media-video/pipewire gui-libs/display-manager-init x11-misc/rofi
 ```
 
 ## Instalation
