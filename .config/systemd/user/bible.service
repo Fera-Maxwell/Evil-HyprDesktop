@@ -1,0 +1,6 @@
+[Unit]
+Description=Generate random Bible verse
+
+[Service]
+Type=oneshot
+ExecStart=/home/fera/.local/bin/bible_daemon

@@ -1,0 +1,3 @@
+2025-12-29 17:44:40.944 [info] Started initializing default profile extensions in extensions installation folder. file:///home/fera/.vscode/extensions
+2025-12-29 17:44:41.026 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/fera/.vscode/extensions Unable to create file 'vscode-userdata:/home/fera/.vscode/extensions/extensions.json' that already exists when overwrite flag is not set
+2025-12-29 17:44:41.026 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/fera/.vscode/extensions

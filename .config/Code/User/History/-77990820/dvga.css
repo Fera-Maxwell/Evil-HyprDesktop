@@ -1,0 +1,169 @@
+/* 1. THE FOUNDATION: Centering the entire page */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #1a1a1a; /* Slightly deeper dark mode */
+  color: #eee;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.1s ease;
+  
+  /* Modern Centering Magic */
+  display: flex;
+  flex-direction: column;   /* Stack elements vertically */
+  align-items: center;      /* Center horizontally */
+  min-height: 99vh;        /* Fill the whole screen height */
+	gap: 20px
+}
+
+h1 {
+  color: #6fcf97;
+  margin-bottom: 30px;
+}
+
+/* 2. THE BUTTON GROUP (The Div) */
+.buttons {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* 3. INDIVIDUAL BUTTONS */
+button {
+	flex: 1 1 auto;
+	min-width: 80px;
+	max-width: 120px;
+  padding: 15px 10px;
+	white-space: nowrap;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: #6fcf97;
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+  background-color: #4fae78;
+  transform: translateY(-2px); /* Slight lift instead of scale */
+  box-shadow: 0 5px 15px rgba(111, 207, 151, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);      /* "Squish" effect when clicked */
+}
+
+/* 4. THE SECRET (Cleaner logic) */
+.secret {
+  background-color: transparent;
+  color: transparent;         /* Truly hidden */
+  border: 1px dashed rgba(255,255,255,0.1);
+}
+
+.secret:hover {
+  background-color: #6fcf97;
+  color: #1a1a1a;
+  border-style: solid;
+}
+
+/* 5. THE INPUT */
+input {
+  padding: 12px;
+  border: 2px solid #ff4d4d; /* High contrast red */
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  outline: none;
+  width: 250px;
+  text-align: center;
+}
+
+/* 6. THE SWITCH (The Big Circle) */
+.switch {
+  width: 80px;        /* same width & height */
+  height: 60px;
+  background-color: #ffaa97;
+  color: #222;
+  box-shadow: 0 5px rgba(240, 166, 130, 0.5), 0 10px 15px rgba(255,170,151,1);
+  border: none;
+  border-radius: 50%;  /* perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;   /* centers horizontally */
+  cursor: pointer;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+.switch:hover {
+}
+
+.switch:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px rgba(255, 255, 255, 1), 0 20px 40px rgba(255, 255, 255, 1);
+}
+
+.switch.on {
+  background-color: #9ff;
+  box-shadow: 0 2px rgba(130, 200, 200, 1), 0 5px 10px rgba(153,255,255,1);
+}
+
+.switch.on:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px rgba(255, 255, 255, 1), 0 20px 40px rgba(255, 255, 255, 1);
+} 
+
+/* 7. THE NUMBERS (The Cat/Mountain Shape) */
+.numbers {
+  display: inline-flex;
+  align-items: center;
+	flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 15px 50px;
+  border-radius: 20px;
+  background-color: #f9a;
+  color: #222;
+  border: none;
+  font-weight: bold;
+  margin-top: 40px;
+	line-height: 1.2;
+	transition: all 0.1s ease;
+}
+button.numbers:hover {
+	background-color: #e89;
+	transform: scale(1.1);
+}
+
+button.numbers:active {
+	background-color: #fae !important;
+	transform: scale(0.85);
+}
+
+/* Ears logic fixed for any screen size */
+.numbers::before, .numbers::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  width: 30px;
+  height: 30px;
+  background-color: inherit; /* Matches the parent color */
+  border-radius: 50% 50% 0 0;
+  z-index: -1;
+}
+
+.numbers::before { left: 15px; transform: rotate(-20deg); }
+.numbers::after { right: 15px; transform: rotate(20deg); }
+
+.numbers .1234 {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Courier New', monospace;
+	margin-top: 4px;
+}

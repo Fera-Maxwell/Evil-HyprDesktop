@@ -1,0 +1,20 @@
+{
+	"config" : 
+	[
+		"/home/fera/.local/share/Steam/config"
+	],
+	"external_drivers" : 
+	[
+		"/home/fera/alvr_streamer_linux/lib64/alvr"
+	],
+	"jsonid" : "vrpathreg",
+	"log" : 
+	[
+		"/home/fera/.local/share/Steam/logs"
+	],
+	"runtime" : 
+	[
+		"/home/fera/.local/share/Steam/steamapps/common/SteamVR"
+	],
+	"version" : 1
+}

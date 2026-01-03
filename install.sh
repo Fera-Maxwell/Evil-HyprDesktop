@@ -56,7 +56,7 @@ fi
 typewrite "$BLUE" 0.03 "Installing the FONT"
 mkdir -p $HOME/.local/share/fonts/
 cp $REPO_DIR/Monocraft.ttc $HOME/.local/share/fonts/
-mkdir $HOME/Pictures/screenshots/
+fc-cache -fv >/dev/null 2>&1
 
 typewrite "$WHITE" 0.05 "We have a .bashrc if you want to 100% get the config, do you confirm? (y/n)"
 typewrite "$WHITE" 0.05 "Don't worry, we will RENAME your old bashrc into '.bashrc.bak'"
@@ -78,4 +78,5 @@ echo -e "\n${GREEN}Deployment Complete!${RESET}"
 sleep 2
 typewrite "$RED" 0.1 "The blood moon awaits... I'll wait for you at the poles"
 sleep 1
-pkill -9 -t $(tty | cut -d'/' -f3,4)
+clear
+exit 0

@@ -1,0 +1,116 @@
+/**
+ * BASE: CLEAN ROUNDED FLOATING
+ * THEME: EVIL RED
+ **/
+
+@theme "/dev/null"
+
+configuration {
+    modi:                        "drun";
+    show-icons:                  true;
+    display-drun:                "APPS";
+    drun-display-format:         "{name}";
+    font:                        "Monocraft Nerd Font 9";
+}
+
+* {
+    /* --- COLOR PALETTE --- */
+    bg:          #ff000088;   /* 88 = Transparency */
+    fg:          #ffaaaa;     /* Evil Red Text */
+    accent:      #aa0000;     /* Border Red */
+    select:      #4d0000;     /* Dark Blood Red */
+    
+    background-color:            transparent;
+    text-color:                  @fg;
+}
+
+window {
+    /* Floating Window Feel */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       480px;
+		height:											 640px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    enabled:                     true;
+    border:                      4px solid;
+    border-radius:               25px;
+    border-color:                @accent;
+    background-color:            @bg;
+    cursor:                      "default";
+		background-image:						 url("hell_clouds.png", both);
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     20px;
+    children:                    [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     10px;
+    border-radius:               5px;
+		background-image:  					 url("search_grad.png", both);
+    children:                    [ "prompt", "entry" ];
+}
+
+entry {
+    enabled:                     true;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           #0a0000;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     4;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+		fixed-columns:               true;
+    margin:                      32px; /* Top/Bottom 100px, Left/Right 300px */
+    spacing:                     5px;       /* Gap between the squares */
+}
+
+element {
+    enabled:                     true;
+    spacing:                     2px;
+    margin:                      2px;
+    padding:                     10px;
+    border-radius:               10px;
+		width:											 100px;
+		height:											 120px;
+    text-color:                  @fg;
+    orientation:                 vertical;  /* Puts Icon ABOVE Text */
+    cursor:                      pointer;
+		background-image: url("tile_grad.png", none);
+    background-color: transparent;
+}
+
+element selected {
+    background-color:            @select;
+    text-color:                  #ffffff;
+    border:                      2px solid;
+    border-color:                white;
+}
+
+element-icon {
+    size:                        48px;      /* Bigger icons for the grid */
+    cursor:                      inherit;
+}
+
+element-text {
+    horizontal-align:            0.5;       /* Centers the text */
+		vertical-align:							 0.5;
+    cursor:                      inherit;
+		expand:											 true;
+		font:												 "Monocraft Nerd Font 8";
+}

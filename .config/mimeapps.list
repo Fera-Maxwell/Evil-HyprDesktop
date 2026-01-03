@@ -1,0 +1,21 @@
+[Added Associations]
+text/plain=org.xfce.mousepad.desktop;
+video/x-matroska=vlc.desktop;
+image/png=krita_png.desktop;feh.desktop;
+video/mp4=vlc.desktop;
+application/x-ahk_x11=nvim.desktop;
+application/x-shellscript=nvim.desktop;
+image/jpeg=krita_jpeg.desktop;
+inode/symlink=thunar.desktop;
+application/x-zerosize=feh.desktop;
+
+[Default Applications]
+video/x-matroska=vlc.desktop
+video/mp4=vlc.desktop
+application/x-ahk_x11=ahk_x11.desktop
+image/png=feh.desktop
+inode/symlink=thunar.desktop
+x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
+x-scheme-handler/magnet=freedownloadmanager_magnet_up.desktop
+application/x-bittorrent=freedownloadmanager_torrent.desktop
+application/x-zerosize=feh.desktop

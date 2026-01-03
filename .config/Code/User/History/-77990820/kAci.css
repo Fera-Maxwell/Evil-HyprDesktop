@@ -1,0 +1,120 @@
+body {
+  font-family: sans-serif;
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 25px;
+	transition: background-color 0.1s ease;
+}
+
+h1 {
+  color: #6fcf97;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid white;
+	border-radius: 5px;
+  background-color: #6fcf97;
+  cursor: pointer;
+	transition: all 0.1s ease;
+}
+
+button:hover {
+  background-color: #4fae78;
+	transform: scale(1,1);
+}
+
+button:active {
+	background-color: #3faa67;
+	transform: scale(0.8);
+}
+
+.secret {
+	background-color: #252525;
+	color: #222;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 15px;
+	transition: all 0.1s ease;
+}
+
+.secret:hover {
+	background-color: #6fcf97;
+	transform: scale(1.5);
+}
+
+.secret:active {
+	background-color: #3faa67;
+	transform: scale(1.2);
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+	border: 2px solid red;
+	border-radius: 10px;
+}
+
+.switch {
+  width: 60px;        /* same width & height */
+  height: 60px;
+  background-color: #ffaa97;
+  color: #222;
+  border: none;
+  border-radius: 50%;  /* perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;   /* centers horizontally */
+  cursor: pointer;
+	transition: all 0.2s ease;
+	user-select: none;
+}
+.switch:hover {
+	transform: scale(1.1);
+}
+.switch:active {
+	transform: scale(0.8);
+}
+.switch.on {
+	background-color: #9ff;
+}
+
+.numbers {
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background-color: #f9a;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Left ear */
+.numbers::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #f9a;
+  transform: rotate(45deg);
+  border-top-left-radius: 50%;
+}
+
+/* Right ear */
+.numbers::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  background-color: #f9a;
+  transform: rotate(-15deg);
+  border-top-right-radius: 0;
+}

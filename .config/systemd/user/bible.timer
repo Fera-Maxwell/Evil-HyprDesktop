@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh Bible verse every 5 seconds
+
+[Timer]
+OnBootSec=2
+OnUnitActiveSec=5
+AccuracySec=1
+
+[Install]
+WantedBy=default.target

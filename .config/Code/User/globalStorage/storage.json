@@ -1,0 +1,73 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "8fb92186a356ea2b9cf8e037f1a505fa4ecdc33cedaf4fe2b9ce4ae154ab9619",
+    "telemetry.devDeviceId": "0ea27c02-5c30-4db2-a856-ebc3227d64ee",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/fera/webshit"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/fera/webshit": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#002451",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#002451",
+            "editorBackground": "#002451",
+            "titleBarBackground": "#001126",
+            "activityBarBackground": "#001733",
+            "sideBarBackground": "#001c40",
+            "statusBarBackground": "#001126",
+            "statusBarNoFolderBackground": "#001126"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/fera/webshit",
+            "backupPath": "/home/fera/.config/Code/Backups/e22e1898a6969b35d84260760ed9c37f",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 900,
+                "height": 600
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 236,
+            "auxiliaryBarWidth": 236,
+            "workspaces": {
+                "e7c1c827bb5d679dca74e8a2d0d09986": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

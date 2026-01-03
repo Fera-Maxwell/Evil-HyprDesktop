@@ -1,0 +1,13 @@
+2025-12-29 17:44:40.501 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-29 17:44:40.672 [info] Started local extension host with pid 37267.
+2025-12-29 17:44:40.739 [info] Started initializing default profile extensions in extensions installation folder. file:///home/fera/.vscode/extensions
+2025-12-29 17:44:40.919 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/fera/.vscode/extensions
+2025-12-29 17:44:40.963 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-29 17:44:41.424 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-29 17:44:43.768 [info] [perf] Render performance baseline is 137ms
+2025-12-29 17:45:57.688 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-29 17:45:57.827 [info] Started local extension host with pid 37505.
+2025-12-29 17:45:58.467 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-29 17:45:58.533 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-29 17:46:00.600 [info] [perf] Render performance baseline is 130ms
+2025-12-29 17:46:32.413 [warning] SettingsEditor2: Settings not included in settingsLayout.ts: extensions.requestTimeout, github.copilot.chat.agent.terminal.allowList, github.copilot.chat.agent.terminal.denyList, terminal.integrated.developer.devMode, terminal.integrated.developer.ptyHost.latency, terminal.integrated.developer.ptyHost.startupDelay, chat.statusWidget.sku
